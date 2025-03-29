@@ -96,4 +96,4 @@ I'm hoping the community will help build Lux into package managers for different
 
 # Ultimately, I think Lux is pretty cool. It's about giving power and customization to those who want it. This is all still in the early stages, though, so things might change.
 
-How does this improved version with more spacing look to you?
+
