@@ -22,7 +22,7 @@ Let me explain each part:
 
 (fs;...): This semicolon-separated list tells the system what filesystem I intend to use on the partition. I'm supporting a wide range, including ext4, ext3, ext2, xfs, btrfs, zfs, reiser, f2fs, jfs_beta, docker_overlayfs_beta, ntfs_unstable, fat32, exfat, refs_beta, apple_hfs, nfs, microsoft_smb (with cifs as an alternative flag), iso_9660_dvd, iso_9660_cd, and tmpfs.
 
-(amount on disk): I'm letting you specify the partition size in gigabytes (GB), from a tiny 0.01GB up to a massive 2147583647GB (a common 32-bit limit). For those who need even more space, adding the *bits_64* flag will allow up to 18446744073709551615GB. Of course, you can't allocate more space than your disk has.
+(amount on disk): I'm letting you specify the partition size in gigabytes (GB), from a tiny 0.01GB up to a massive 2147583647GB (a common 32-bit limit). For those who need even more space, adding the *bits_64* flag will allow up to a whopping 18446744073709551615GB! (the common 64-bit integer limit)  Of course, you can't allocate more space than your disk has.
 
 (mount point): This is where you tell the system where you want to access the partition in the file system (e.g., /, /home).
 
