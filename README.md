@@ -1,4 +1,4 @@
-My Vision for Lux: A Customizable Partition Table (Pre-Alpha) - Improved Spacing
+# My Vision for Lux: A Customizable Partition Table (Pre-Alpha) - Improved Spacing
 Author: Aamare
 Date: March 29, 2025 (Pre-Alpha Concept)
 
@@ -6,7 +6,7 @@ Introduction:
 
 I'm developing Lux, a new partition table scheme and its accompanying command-line tool (lux). My goal with Lux is to empower advanced users with unparalleled configurability and the potential for optimized performance. I'm not aiming for simplicity; instead, I want to provide the tools for granular control over disk organization. Lux is designed to be built from source, allowing for deep pre-build customization tailored to specific systems.
 
-The Lux Partition Table Format:
+# The Lux Partition Table Format:
 
 My design for Lux defines partitions using a string-based syntax. Here's how it works, with more visual spacing:
 
@@ -28,7 +28,7 @@ Let me explain each part:
 
 (*verbose=yes): If you want more detailed output during operations, you can add this optional flag.
 
-Here are a few examples of how I envision using this format:
+# Here are a few examples of how I envision using this format:
 
 (d1) mypartition bootable btrfs 23G /mnt/mypartition
 
@@ -38,7 +38,7 @@ Here are a few examples of how I envision using this format:
 
 (d2) data_storage encrypt,lvm_part xfs 500G /data
 
-The lux Command-Line Tool: My Interface to Lux:
+# The lux Command-Line Tool: My Interface to Lux:
 
 To manage disks and partitions with Lux, I'm building a command-line tool called lux. It's not meant to be a simple install; I envision users building it from the source code, and it might even require some tweaking for your specific system architecture before you compile it.
 
@@ -86,14 +86,14 @@ lux create-android-virtualization-device (disk_label) (video or no-video) (sound
 
 lux apply-format <filename>.format: (Conceptual) Applies a pre-configured formatting script created by advanced users. The .format file would contain enable_lux+ true and Lux partition definitions.
 
-Important Things to Keep in Mind:
+# Important Things to Keep in Mind:
 
 Lux is really for advanced users who want a lot of control. If you're new to this, I'd recommend sticking with GPT or MBR. Building Lux will require compiling it from source, and you might need to tweak some configuration files for your specific computer. Many of the powerful features in Lux will erase your data, so you need to be careful. Also, keep in mind that Lux won't work with every system out there – its compatibility is finite.
 
-My Vision for the Future:
+# My Vision for the Future:
 
 I'm hoping the community will help build Lux into package managers for different Linux distributions. I also have a bigger dream: to build an entire Unix-like operating system using Lux as its partition table. I'm calling it Susmo, and I envision it being something like BSD.
 
-Ultimately, I think Lux is pretty cool. It's about giving power and customization to those who want it. This is all still in the early stages, though, so things might change.
+# Ultimately, I think Lux is pretty cool. It's about giving power and customization to those who want it. This is all still in the early stages, though, so things might change.
 
 How does this improved version with more spacing look to you?
