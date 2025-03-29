@@ -84,8 +84,6 @@ lux set-coding-environment (disk_label) (programming_language) (name_for-disk): 
 
 lux create-android-virtualization-device (disk_label) (video or no-video) (sound or no-sound) (apkinstall or no-apkinstall) (network or no network) (ppc or no-ppc): Prepares a partition for an Android virtual device.
 
-lux apply-format <filename>.format: (Conceptual) Applies a pre-configured formatting script created by advanced users. The .format file would contain enable_lux+ true and Lux partition definitions.
-
 # Important Things to Keep in Mind:
 
 Lux is really for advanced users who want a lot of control. If you're new to this, I'd recommend sticking with GPT or MBR. Building Lux will require compiling it from source, and you might need to tweak some configuration files for your specific computer. Many of the powerful features in Lux will erase your data, so you need to be careful. Also, keep in mind that Lux won't work with every system out there – its compatibility is finite.
