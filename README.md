@@ -56,7 +56,7 @@ lux sandbox (disk_identifier)/(script_path): Executes a script within a temporar
 
 lux mount (partition_identifier) (mount_point): Mounts a Lux partition.
 
-lux umount (partition_identifier or mount_point): Unmounts a Lux partition.
+lux unmount (partition_identifier or mount_point): Unmounts a Lux partition.
 
 lux garbage (disk_label): Securely overwrites data on a disk/partition with warnings and password confirmation.
 
