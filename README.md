@@ -18,9 +18,9 @@ Let me explain each part:
 
 (name): Here, you can give your partition a descriptive name.
 
-(flags:...): This is where the real power lies. You can specify a colon-separated list of flags to define the partition's attributes. I've included flags like bootable, encrypt, latest_boot (which I see as the EFI System Partition), msformat, raid_array, lvm_part, swap, swap_hibernate, hide, and bls_boot_partition for BootLoaderSpec compliance.
+(flags:...): This is where the real power lies. You can specify a colon-separated list of flags to define the partition's attributes. I've included flags like bootable, encrypt, latest_boot (which I see as the EFI System Partition), msformat, raid_array, lvm_part, swap, swap_hibernate, hide, bits_64 and bls_boot_partition for BootLoaderSpec compliance.
 
-(fs;...): This semicolon-separated list tells the system what filesystem I intend to use on the partition. I'm supporting a wide range, including ext4, ext3, ext2, xfs, btrfs, zfs, reiser, f2fs, jfs_beta, docker_overlayfs_beta, ntfs_unstable, fat32, exfat, refs_beta, apple_hfs, nfs, microsoft_smb (with cifs as an alternative flag), iso_9660_dvd, iso_9660_cd, and tmpfs.
+(fs;...): This semicolon-separated list tells the system what filesystem I intend to use on the partition. I'm supporting a wide range, including ext4, ext3, ext2, xfs, btrfs, zfs, reiser, f2fs, jfs_beta, ntfs_unstable, fat32, exfat, apple_hfs, nfs, microsoft_smb (with cifs as an alternative flag), iso_9660_dvd, iso_9660_cd, and tmpfs.
 
 (amount on disk): I'm letting you specify the partition size in gigabytes (GB), from a tiny 0.01GB up to a massive 2147583647GB (a common 32-bit limit). For those who need even more space, adding the *bits_64* flag will allow up to a whopping 18446744073709551615GB! (the common 64-bit integer limit)  Of course, you can't allocate more space than your disk has.
 
